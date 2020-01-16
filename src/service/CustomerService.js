@@ -6,7 +6,7 @@ const USER_API_BASE_URL = 'http://localhost:8080/customer/';
 class CustomerService {
 
     fetchCustomers() {
-        console.log('AuthService.getAuthHeader()::: ', AuthService.getAuthHeader())
+        // console.log('AuthService.getAuthHeader()::: ', AuthService.getAuthHeader())
         return axios.get(`${USER_API_BASE_URL}list-customers`, AuthService.getAuthHeader());
     }
 

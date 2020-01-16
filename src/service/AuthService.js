@@ -14,9 +14,14 @@ class AuthService {
     }
 
     getAuthHeader() {
+        let token = '';
+        let userInfo = this.getUserInfo();
+        if (userInfo) {
+            token = userInfo.data.token
+        }
         return {
             headers: {
-                'Authorization': `Bearer ${this.getUserInfo().data.token}`
+                'Authorization': `Bearer ${token}`
             }
         }
     }
