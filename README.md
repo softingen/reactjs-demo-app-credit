@@ -1,1 +1,1 @@
-# Sample ReactJS Application
+# Sample ReactJS Application with User Authentication
